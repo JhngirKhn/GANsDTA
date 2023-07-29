@@ -35,20 +35,20 @@ The dataset comprises a total of 300,056 records, with 25,000 records allocated 
 ## 🧠 Model Architecture
 The GAN architecture for drug discovery generally consists of the following key components:
 
-1. **Generator**: The generator network takes random noise or latent vectors as input and transforms them into molecular structures. It usually comprises several layers of neural units that progressively upsample the input to generate complex molecular representations.
+1. 🧪 **Generator**: The generator network takes random noise or latent vectors as input and transforms them into molecular structures. It usually comprises several layers of neural units that progressively upsample the input to generate complex molecular representations.
 
-2. **Discriminator**: The discriminator network, also known as the critic, receives molecular structures as input and tries to distinguish between real molecules from the training dataset and fake molecules produced by the generator. Like the generator, it also consists of several layers, but it progressively downsamples the input to make binary predictions (real or fake).
+2. 🔍 **Discriminator**: The discriminator network, also known as the critic, receives molecular structures as input and tries to distinguish between real molecules from the training dataset and fake molecules produced by the generator. Like the generator, it also consists of several layers, but it progressively downsamples the input to make binary predictions (real or fake).
 
-3. **Latent Space**: The latent space is the representation of the random noise fed into the generator. It is a low-dimensional vector space where the generator learns to map the noise into meaningful molecular structures. The dimensionality of the latent space significantly influences the diversity and quality of the generated molecules.
+3. 🌌 **Latent Space**: The latent space is the representation of the random noise fed into the generator. It is a low-dimensional vector space where the generator learns to map the noise into meaningful molecular structures. The dimensionality of the latent space significantly influences the diversity and quality of the generated molecules.
 
-4. **Loss Functions**: GANs are trained using two main loss functions. The generator aims to minimize the discriminator's ability to distinguish between real and fake molecules, which is achieved by maximizing the discriminator's loss on generated samples. Simultaneously, the discriminator aims to maximize its ability to differentiate real from fake samples.
+4. 🔍 **Loss Functions**: GANs are trained using two main loss functions. The generator aims to minimize the discriminator's ability to distinguish between real and fake molecules, which is achieved by maximizing the discriminator's loss on generated samples. Simultaneously, the discriminator aims to maximize its ability to differentiate real from fake samples.
 
-5. **Training Process**: During training, the generator and the discriminator are updated in an adversarial manner. The generator generates fake molecules and tries to fool the discriminator, while the discriminator learns to become more accurate in distinguishing real molecules from fake ones. This iterative process continues until both networks converge to a point where the generator produces realistic molecular structures and the discriminator struggles to differentiate them from real ones.
+5. 🔄 **Training Process**: During training, the generator and the discriminator are updated in an adversarial manner. The generator generates fake molecules and tries to fool the discriminator, while the discriminator learns to become more accurate in distinguishing real molecules from fake ones. This iterative process continues until both networks converge to a point where the generator produces realistic molecular structures and the discriminator struggles to differentiate them from real ones.
 
-6. **Output**: The final output of the GAN is the generator itself, which can be used to generate novel drug-like molecules with desired properties. These generated molecules can be further filtered based on specific criteria or used in virtual screening to identify potential drug candidates for experimental validation.
+6. 🎯 **Output**: The final output of the GAN is the generator itself, which can be used to generate novel drug-like molecules with desired properties. These generated molecules can be further filtered based on specific criteria or used in virtual screening to identify potential drug candidates for experimental validation.
 ![Model](model.jpg)
 
-# Source codes:
+# 📁 Source codes:
 In this PyTorch implementation of drug discovery using Generative Adversarial Networks (GANs), the run.py script serves as the central component that encapsulates the entire workflow. The script orchestrates the training and evaluation of the GAN model for generating novel drug-like molecules with desired properties.
 
 + run.py: This script trains the model
