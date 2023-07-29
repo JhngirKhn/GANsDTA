@@ -1,20 +1,21 @@
 # GANsDTA
-## Description
+## 💡 Description
 Drug-Target binding affinity prediction using Generative Adversarial Networks (GANs) is an innovative approach in computational drug discovery. GANs are a class of artificial intelligence models that consist of two neural networks, a generator and a discriminator, which work together in a game-like manner. In this context, the generator generates potential drug molecules, while the discriminator assesses their binding affinity to specific target proteins. The GANs are trained on known drug-target interaction data, enabling them to learn and generate new drug-like molecules that have a higher probability of binding strongly to the target. By leveraging GANs for this prediction task, researchers aim to accelerate the drug development process by identifying potential drug candidates with enhanced binding affinity, ultimately improving the chances of success in drug discovery and optimization.
 
-## Table of Contents
-[Datasets](#datasets)  
-[Model Architecture](#ModelArchitecture)  
-[Source Code](#ModelArchitecture)  
-[Installation and Requiirments](#Installation)  
-[Usage](#Usage)  
-[Training](#training)  
-[Results](#results)  
-[Contribution](#contribution)  
-[License](#License)  
-[Acknowledgments](#Acknowledgments)  
+## 📋 Table of Contents
+1. [💡 Description](#description)  
+2. [🔍 Dataset](#dataset)  
+3. [🧠 Model Architecture](#model-architecture)  
+4. [⚙️ Installation](#installation)  
+5. [🚀 Usage](#usage)  
+6. [🎓 Training](#training)  
+7. [📊 Results](#results)  
+8. [🤝 Contribution](#contribution)  
+9. [📄 License](#license)  
+10. [🙏 Acknowledgments](#acknowledgments)  
 
-# Datasets:
+
+# 🔍 Datasets:
 ### Dataset Source:
 The data files were downloaded from xyz.com  
 ### Description:
@@ -31,7 +32,7 @@ The dataset comprises a total of 300,056 records, with 25,000 records allocated 
 
 + All the data presented in the CSV file
 
-## Model Architecture
+## 🧠 Model Architecture
 The GAN architecture for drug discovery generally consists of the following key components:
 
 1. **Generator**: The generator network takes random noise or latent vectors as input and transforms them into molecular structures. It usually comprises several layers of neural units that progressively upsample the input to generate complex molecular representations.
@@ -54,7 +55,7 @@ In this PyTorch implementation of drug discovery using Generative Adversarial Ne
 
 The run.py script begins by setting up the necessary configurations, including hyperparameters, data paths, and model architecture specifications. It then loads the drug dataset, containing information about drug SMILES representations, target protein sequences, and corresponding affinity values.
 
-# Installation and Requirements
+# ⚙️ Installation and Requirements
 You'll need to run the following commands in order to run the codes
 ```sh
 + conda env create -f env.yml
@@ -69,18 +70,14 @@ conda activate GANsDTA
 + conda install -y -c conda-forge matplotlib
 + pip install torch
 ```
-## Training
+## 🎓 Training
 Running
 ```sh
 conda activate GANsDTA
 python run.py
 ```
 The run.py script is designed to train the model using a specific dataset and make predictions based on the actual affinity between drugs and target proteins. Additionally, it has the capability to generate novel drugs that closely resemble those with known affinities.
-## Results
-
-Sure, here's an example of how you can create a table for the "Results" section in your README.md file:
-
-## Results
+## 📊 Results
 
 | Model       | MSE                 | CI                  | RM2                 |
 |-------------|---------------------|---------------------|---------------------|
@@ -95,12 +92,12 @@ the table shows the comparison with baseline models
 
 In the "Results" section, scatter plots are utilized to visually represent the correlation between the predicted and actual drug-target affinity values. These scatter plots provide valuable insights into the model's performance and its ability to accurately predict molecular interactions.
 
-## Contribution
+## 🤝 Contribution
 In this drug discovery research project, contributions from various stakeholders have played a significant role in advancing the field. The primary contributions include novel deep learning architectures tailored for drug generation, the creation of curated datasets containing molecular information, and the development of innovative evaluation metrics to assess model performance accurately. Additionally, valuable contributions have been made through rigorous experimentation and analysis, leading to insights into the strengths and limitations of the proposed methodologies. The collaborative efforts of researchers, developers, and domain experts have collectively contributed to the progress of drug discovery using advanced computational techniques, offering potential advancements in therapeutic development and significantly impacting the pharmaceutical industry's landscape.
 
-## License
+## 📄 License
   License information here
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 Acknowledgments are extended with deep gratitude and appreciation to all the individuals and institutions that have contributed to the success of this drug discovery research endeavor. Special thanks go to the research advisors and mentors whose guidance and expertise have been invaluable throughout the project. Gratitude is also expressed to the contributors, fellow researchers, and collaborators who have provided constructive feedback, insightful discussions, and support, enriching the project's outcomes. Furthermore, the acknowledgment extends to the developers and open-source community for their tools and libraries, which have been instrumental in the implementation and experimentation processes. Lastly, sincere appreciation is conveyed to the funding agencies or organizations that have provided financial support, enabling the realization of this research vision. Together, these collective contributions have played a pivotal role in advancing the understanding and exploration of drug discovery using deep learning methodologies.
