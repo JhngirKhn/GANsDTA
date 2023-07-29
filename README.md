@@ -23,10 +23,10 @@ During the preprocessing stage, the raw dataset is cleaned and formatted to ensu
 ### Dataset Size:
 The dataset comprises a total of 300,056 records, with 25,000 records allocated for training purposes, leaving the remaining 275,056 records for testing and evaluation.  
 ### Sample Entry:
-Sample ID: 12345  
-Drug SMILES: CC(=O)Nc1cnc2[nH]cnc2c1N  
-Target Protein Sequence: MGGKQDKIYLVLENGKTLKFPMILYGMLVYKLLNKFRNEEYDVLDKILEKKDGNFIMKVKNGKLCDLFIFSKKDINPN  
-Affinity Value (pKd): 7.82  
++ **Sample ID:** 12345  
++ **Drug SMILES:** CC(=O)Nc1cnc2[nH]cnc2c1N  
++ **Target Protein Sequence:** MGGKQDKIYLVLENGKTLKFPMILYGMLVYKLLNKFRNEEYDVLDKILEKKDGNFIMKVKNGKLCDLFIFSKKDINPN  
++ **Affinity Value (pKd):** 7.82  
 
 + All the data presented in the CSV file
 
