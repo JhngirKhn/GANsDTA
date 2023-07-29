@@ -14,7 +14,7 @@ Drug-Target binding affinity prediction using Generative Adversarial Networks (G
 [Acknowledgments](#Acknowledgments)  
 
 # Datasets:
-The data files were downloaded from xyz.com
+The data files were downloaded from xyz.com  
 The Davis dataset is a comprehensive collection of molecular interactions, consisting of 68 distinct drugs and 442 target proteins. The dataset includes pairwise affinities, which are quantified using Kd values, representing the kinase dissociation constant. These Kd affinity values offer insights into the binding abilities of drugs to their corresponding target proteins. However, the range of affinities spans a wide spectrum, from as low as 0.016 to as high as 10000. Due to the considerable variation in affinities, it can sometimes impact the accuracy of predictive models. To mitigate this issue and enhance the performance of our experiments, we transform the Kd values into logspace, resulting in pKd values. This logarithmic transformation compresses the range of affinities, making them more manageable and conducive to accurate predictions in our drug discovery research. The utilization of pKd values allows us to better understand and model drug-target interactions, ultimately facilitating the development of novel and effective therapeutics.
 + All the data presented in the CSV file
 ## Model Architecture
