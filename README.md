@@ -3,59 +3,29 @@ Drug-Target binding affinity prediction using Generative Adversarial Networks (G
 
 # Resources:
 
-The data files were downloaded from https://github.com/hkmztrk/DeepDTA/tree/master/data
-+ For the DAVIS dataset: test_fold_setting1.txt, train_fold_setting1.txt, Y, ligands_can.txt, and proteins.   txt are located in the data/davis/folds/ directory.
-+ For the KIBA dataset: test_fold_setting1.txt, train_fold_setting1.txt, Y, ligands_can.txt, and proteins.txt are located in the data/kiba/folds/ directory.
+The data files were downloaded from xyz.com
++ All the data presented in the CSV file
 
 
 # Source codes:
-+ create_data.py: This script generates data in PyTorch format
-+ utils.py: The utils.py module provides utility functions and classes used by other scripts in the codebase. One such class is TestbedDataset, which is used by create_data.py to create data in PyTorch format.
-+ training.py: train the GraphVAEDTA model and make prediction.
-+ models.py: recieving graph data as a input for drug while sequence data for protein
-+ test.py: The script test.py is utilized to assess the performance of our saved models.
-
-# Step-by-step running:
++ run.py: This script trains the model
 
 # Requirements
-You'll need to run following commands in order to run the codes.
-+ conda env create -f environment.yml
+You'll need to run the following commands in order to run the codes.
++ conda env create -f env.yml
 it will download all the required libraries
 
-````
-Or intall Manually..
-
-conda create -n GraphVAEDTA python=3.8
-conda activate GraphVAEDTA
+Or install Manually...
+conda create -n GANsDTA python=3.8
+conda activate GANsDTA
 + python 3.8.11
-+ conda install -y -c conda-forge rdkit
-+ conda install pytorch torchvision cudatoolkit -c pytorch
-+ pip install torch-cluster==1.6.0+pt112cu102
-+ pip install torch-scatter==2.1.0+pt112cu102
-+ pip install torch-sparse==0.6.16+pt112cu102
-+ pip install torch-spline-conv==1.2.1+pt112cu102
-+ pip install torch-geometric==2.2.0
-
-
-
-## Create data in pytorch format
-Running
-```sh
-conda activate GraphVAEDTA
-python create_data.py
-```
-The create_data.py script generates four CSV files: kiba_train.csv, kiba_test.csv, davis_train.csv, and davis_test.csv. These files are saved in the data/ folder and can be used as input to generate PyTorch-formatted data. These files are in turn input to create data in pytorch format,
-stored at data/processed/, consisting of  kiba_train.pt, kiba_test.pt, davis_train.pt, and davis_test.pt.
++ conda install -y -c conda-forge matplotlib
++ pip install torch
 
 ## Train the model
-To train a model using training data.
-
+Running
 ```sh
-conda activate GraphVAEDTA
-python training.py 0 0
+conda activate GANsDTA
+python run.py
 ```
-
-where the first argument is for the index of the datasets, 0/1 for 'davis' or 'kiba', respectively;
- the second argument is for the index of the Cuda , 0/1/2/3 for cuda:0, cuda:1, cuda:2, or cuda:3, respectively;
-
-This returns the model and result log files for the achieving the best MSE for testing data throughout the training.
+The run.py script is designed to train the model using a specific dataset and make predictions based on the actual affinity between drugs and target proteins. Additionally, it has the capability to generate novel drugs that closely resemble those with known affinities.
