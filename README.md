@@ -11,17 +11,20 @@ The data files were downloaded from xyz.com
 + run.py: This script trains the model
 
 # Requirements
-You'll need to run the following commands in order to run the codes.
+You'll need to run the following commands in order to run the codes
+```sh
 + conda env create -f env.yml
+```
 it will download all the required libraries
 
 Or install Manually...
+```sh
 conda create -n GANsDTA python=3.8
 conda activate GANsDTA
 + python 3.8.11
 + conda install -y -c conda-forge matplotlib
 + pip install torch
-
+```
 ## Train the model
 Running
 ```sh
