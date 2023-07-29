@@ -14,9 +14,22 @@ Drug-Target binding affinity prediction using Generative Adversarial Networks (G
 [Acknowledgments](#Acknowledgments)  
 
 # Datasets:
+### Dataset Source:
 The data files were downloaded from xyz.com  
-The Davis dataset is a comprehensive collection of molecular interactions, consisting of 68 distinct drugs and 442 target proteins. The dataset includes pairwise affinities, which are quantified using Kd values, representing the kinase dissociation constant. These Kd affinity values offer insights into the binding abilities of drugs to their corresponding target proteins. However, the range of affinities spans a wide spectrum, from as low as 0.016 to as high as 10000. Due to the considerable variation in affinities, it can sometimes impact the accuracy of predictive models. To mitigate this issue and enhance the performance of our experiments, we transform the Kd values into logspace, resulting in pKd values. This logarithmic transformation compresses the range of affinities, making them more manageable and conducive to accurate predictions in our drug discovery research. The utilization of pKd values allows us to better understand and model drug-target interactions, ultimately facilitating the development of novel and effective therapeutics.
+### Description:
+The Davis dataset is a comprehensive collection of molecular interactions, consisting of 68 distinct drugs and 442 target proteins. The dataset includes pairwise affinities, which are quantified using Kd values, representing the kinase dissociation constant. These Kd affinity values offer insights into the binding abilities of drugs to their corresponding target proteins. However, the range of affinities spans a wide spectrum, from as low as 0.016 to as high as 10000. Due to the considerable variation in affinities, it can sometimes impact the accuracy of predictive models. To mitigate this issue and enhance the performance of our experiments, we transform the Kd values into logspace, resulting in pKd values. This logarithmic transformation compresses the range of affinities, making them more manageable and conducive to accurate predictions in our drug discovery research. The utilization of pKd values allows us to better understand and model drug-target interactions, ultimately facilitating the development of novel and effective therapeutics.  
+### Preprocessing:
+During the preprocessing stage, the raw dataset is cleaned and formatted to ensure consistency and remove any irrelevant information. Additionally, data normalization is performed to bring features to a similar scale, enabling more effective model training and analysis.
+### Dataset Size:
+The dataset comprises a total of 300,056 records, with 25,000 records allocated for training purposes, leaving the remaining 275,056 records for testing and evaluation.  
+### Sample Entry:
+Sample ID: 12345  
+Drug SMILES: CC(=O)Nc1cnc2[nH]cnc2c1N  
+Target Protein Sequence: MGGKQDKIYLVLENGKTLKFPMILYGMLVYKLLNKFRNEEYDVLDKILEKKDGNFIMKVKNGKLCDLFIFSKKDINPN  
+Affinity Value (pKd): 7.82  
+
 + All the data presented in the CSV file
+
 ## Model Architecture
 ![Model](model.jpg)
 
