@@ -91,5 +91,16 @@ Sure, here's an example of how you can create a table for the "Results" section 
 the table shows the comparison with baseline models
 
 
-![result](davisaffin.png)
+![result](davisaffin.png)  
+
 In the "Results" section, scatter plots are utilized to visually represent the correlation between the predicted and actual drug-target affinity values. These scatter plots provide valuable insights into the model's performance and its ability to accurately predict molecular interactions.
+
+## Contribution
+In this drug discovery research project, contributions from various stakeholders have played a significant role in advancing the field. The primary contributions include novel deep learning architectures tailored for drug generation, the creation of curated datasets containing molecular information, and the development of innovative evaluation metrics to assess model performance accurately. Additionally, valuable contributions have been made through rigorous experimentation and analysis, leading to insights into the strengths and limitations of the proposed methodologies. The collaborative efforts of researchers, developers, and domain experts have collectively contributed to the progress of drug discovery using advanced computational techniques, offering potential advancements in therapeutic development and significantly impacting the pharmaceutical industry's landscape.
+
+## License
+  License information here
+
+## Acknowledgments
+
+Acknowledgments are extended with deep gratitude and appreciation to all the individuals and institutions that have contributed to the success of this drug discovery research endeavor. Special thanks go to the research advisors and mentors whose guidance and expertise have been invaluable throughout the project. Gratitude is also expressed to the contributors, fellow researchers, and collaborators who have provided constructive feedback, insightful discussions, and support, enriching the project's outcomes. Furthermore, the acknowledgment extends to the developers and open-source community for their tools and libraries, which have been instrumental in the implementation and experimentation processes. Lastly, sincere appreciation is conveyed to the funding agencies or organizations that have provided financial support, enabling the realization of this research vision. Together, these collective contributions have played a pivotal role in advancing the understanding and exploration of drug discovery using deep learning methodologies.
