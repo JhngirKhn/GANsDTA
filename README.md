@@ -4,6 +4,14 @@ Drug-Target binding affinity prediction using Generative Adversarial Networks (G
 
 ## Table of Contents
 [Datasets](#datasets)
+[Model Architecture](#Model Architecture)
+[Installation](#Installation)
+[Usage](#Usage)
+[Training](#training)
+[Results](#results)
+[Contribution](#contribution)
+[License](#License)
+[Acknowledgments](#Acknowledgments)
 
 ## Model Architecture
 ![Model](model.jpg)
