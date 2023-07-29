@@ -89,3 +89,7 @@ Sure, here's an example of how you can create a table for the "Results" section 
 | GANsDTA   3 | 0.22                | 0.95                | 0.79                |
 
 the table shows the comparison with baseline models
+
+
+![result](davisaffin.png)
+In the "Results" section, scatter plots are utilized to visually represent the correlation between the predicted and actual drug-target affinity values. These scatter plots provide valuable insights into the model's performance and its ability to accurately predict molecular interactions.
